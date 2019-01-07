@@ -10,11 +10,17 @@ import java.util.Random;
 public class Enemy extends Character{
     Random rnd = new Random();
 
-
+    /**
+     * コンストラクタ。名前を指定する。
+     * @param name
+     */
     public Enemy(String name){
         super(name);
     }
 
+    /**
+     * ランダムで手を決めるメソッド
+     */
     public String setRandomHand(){
         int randomCnt = rnd.nextInt(3);
 

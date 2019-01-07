@@ -11,6 +11,10 @@ public class Me extends Character{
     Scanner scanner = new Scanner(System.in);
     private String[] hand;
 
+    /**
+     * コンストラクタ。名前を指定する。
+     * @param name
+     */
     public Me(String name) {
         super(name);
     }
@@ -28,10 +32,16 @@ public class Me extends Character{
         this.hand = str.clone();
     }
 
+    /**
+     * 右手と左手を返すメソッド
+     */
     public String[] getMyHand(){
         return this.hand;
     }
 
+    /**
+     * 左手と右手のどちらにするかを決めるためのメソッド
+     */
     public String decideHand(){
         System.out.println("右手：" + this.hand[0]);
         System.out.println("左手：" + this.hand[1]);

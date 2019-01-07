@@ -1,6 +1,11 @@
 package jp.ac.uryukyu.ie.e185709;
-
+/**
+ * キャラクターメソッド以外で使う処理メソッドを記述しているクラス。
+ */
 public class Referee {
+    /**
+     * ジャンケンの判定を行うメソッド
+     */
     public String hantei(String myHand, String enemyHand){
         String result;
 
@@ -33,6 +38,9 @@ public class Referee {
         return result;
     }
 
+    /**
+     * ジャンケンで手を出すメソッド。
+     */
     public void pon(String[] myHands,String enemyHand){
 
         System.out.println("二人「ジャン・ケン・ポン！」");
